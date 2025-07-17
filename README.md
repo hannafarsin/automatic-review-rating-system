@@ -16,12 +16,12 @@ The project includes:
 
 - Evaluating performance using accuracy, precision, recall, and F1-score
 
-# Data Collection 
+## Data Collection 
 For this project, we utilized a publicly available dataset sourced from Kaggle, titled “Cell Phones and Accessories - Amazon Reviews”. The dataset contains detailed customer reviews specifically for mobile phones and related accessories listed on Amazon.
 
 Each row in the dataset represents a single user review and includes various metadata along with the actual review text and rating. This data is ideal for developing a review rating prediction system, as it provides both the natural language input (reviewText) and the corresponding target label (Rating).
 
-# Dataset Details:
+### Dataset Details:
 Source: Kaggle - Amazon Reviews: Cell Phones and Accessories
 
 Domain: E-commerce / Amazon / Mobile Accessories
@@ -66,7 +66,8 @@ TF-IDF allowed us to extract the most important words across the corpus without 
 
 
 
-## Notebook link:
+[View Balanced Training Notebook](https://github.com/hannafarsin/automatic-review-rating-system/blob/main/notebook/balanced_training%20(2)%20(1).ipynb)
+
 
 
 
