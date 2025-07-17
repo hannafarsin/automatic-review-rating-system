@@ -29,7 +29,46 @@ Domain: E-commerce / Amazon / Mobile Accessories
 Size: ~190,000 reviews
 
 Format: json (later converted to CSV(Comma-Separated Values))
-**Source**: [Kaggle – Amazon Reviews: Cell Phones and Accessories](https://www.kaggle.com/datasets)
+
+##  Data Preprocessing
+
+The dataset was cleaned and preprocessed to improve the quality and usability of review text for machine learning:
+
+- Removed exact duplicates and conflicting reviews (same text, different ratings)
+- Converted all text to lowercase
+- Removed punctuation and extra whitespace
+- Removed stopwords using spaCy
+- Applied lemmatization to normalize words to their base form
+- Calculated review length (in words)
+
+## Data Visualization
+
+Several visualizations were used to explore and understand the data:
+
+- Distribution of review ratings (bar chart and pie chart)
+- Review length histogram
+
+## Dataset Balancing
+
+To avoid bias in the model due to class imbalance, we created a **balanced dataset** with **2,000 reviews per rating class** (from 1 to 5 stars). This ensured that the classifier was trained equally across all categories.
+
+The original dataset after cleaning(180,000+ reviews) was filtered and sampled 
+
+## Text Vectorization
+
+To transform textual review data into a machine-readable format, we used the **TF-IDF (Term Frequency-Inverse Document Frequency)** technique with the following settings:
+
+- Maximum features: 5000
+- Trained only on the training set
+- Transformed both training and testing text
+
+TF-IDF allowed us to extract the most important words across the corpus without giving high weight to common stopwords.
+
+
+
+## Notebook link:
+
+
 
 
 
