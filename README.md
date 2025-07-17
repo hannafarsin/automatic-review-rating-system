@@ -66,7 +66,7 @@ TF-IDF allowed us to extract the most important words across the corpus without 
 
 
 
-[View Balanced Training Notebook](https://github.com/hannafarsin/automatic-review-rating-system/blob/main/notebook/balanced_training%20(2)%20(1).ipynb)
+[View Balanced Training Notebook](https://github.com/hannafarsin/automatic-review-rating-system/blob/main/notebook/balanced_training%203.ipynb)
 
 
 
