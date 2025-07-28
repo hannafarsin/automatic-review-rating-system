@@ -30,6 +30,8 @@ Size: ~190,000 reviews
 
 Format: json (later converted to CSV(Comma-Separated Values))
 
+[View Dataset](https://github.com/hannafarsin/automatic-review-rating-system/blob/main/data/kaggle/reviews_output.csv)
+
 ##  Data Preprocessing
 
 The dataset was cleaned and preprocessed to improve the quality and usability of review text for machine learning:
@@ -54,19 +56,8 @@ To avoid bias in the model due to class imbalance, we created a **balanced datas
 
 The original dataset after cleaning(180,000+ reviews) was filtered and sampled 
 
-## Text Vectorization
 
-To transform textual review data into a machine-readable format, we used the **TF-IDF (Term Frequency-Inverse Document Frequency)** technique with the following settings:
-
-- Maximum features: 5000
-- Trained only on the training set
-- Transformed both training and testing text
-
-TF-IDF allowed us to extract the most important words across the corpus without giving high weight to common stopwords.
-
-
-
-[View Balanced Training Notebook](https://github.com/hannafarsin/automatic-review-rating-system/blob/main/notebook/balanced_training%203.ipynb)
+[View Balanced Dataset](https://github.com/hannafarsin/automatic-review-rating-system/blob/main/data/kaggle/balanced_reviews_dataset3.csv)
 
 
 ## Creating an Imbalanced Dataset
@@ -81,7 +72,7 @@ To simulate real-world scenarios where user ratings are not evenly distributed, 
 - To train a second model (**Model_B**) on **naturally imbalanced data**.
 - To compare its performance with **Model_A** (trained on balanced data) and observe the effects of training distribution on model generalization.
 
-[View imbalanced Training Notebook](https://github.com/hannafarsin/automatic-review-rating-system/blob/main/notebook/balanced_training%203.ipynb)
+[View imbalanced dataset](https://github.com/hannafarsin/automatic-review-rating-system/blob/main/data/kaggle/imbalanced_reviews_dataset3.csv)
 
 ---
 
@@ -121,6 +112,9 @@ Serialization: Saved models and vectorizers using pickle for later use in the St
 |----------|----------------------------------|----------------------------------------|
 | Model_A  | Balanced (Equal samples/class)   | Tested on both Balanced and Imbalanced |
 | Model_B  | Imbalanced (Original distribution)| Tested on both Imbalanced and Balanced |
+
+[View imbalanced Training Notebook](https://github.com/hannafarsin/automatic-review-rating-system/blob/main/notebook/balanced_training%206%20(1).ipynb)
+[View imbalanced Training Notebook](https://github.com/hannafarsin/automatic-review-rating-system/blob/main/notebook/imbalanced%20training%20(1)%20(1).ipynb)
 
 ---
 
