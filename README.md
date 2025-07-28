@@ -142,23 +142,23 @@ Although both models achieved similar **accuracy**, **Model_A** showed more **co
 
 ---
 
-## 🌐 Streamlit Interface
+##  Streamlit Interface
 
 To make the review rating system interactive and accessible, a **Streamlit web application** was developed.
 
-### ✨ Features
+### Features
 - Simple UI to input any product review
 - Real-time predictions from both models:
   - **Model_A** (Trained on Balanced Dataset)
   - **Model_B** (Trained on Imbalanced Dataset)
 - **Side-by-side comparison** of predicted ratings
 
-### 🧱 Deployment Stack
+###  Deployment Stack
 
 - **Frontend**: Streamlit components (e.g., text area, buttons, display)
 - **Backend**: Pickle-loaded ML models and TF-IDF vectorizers
 
-### 📁 Key Files
+###  Key Files
 
 | File/Folder | Description                               |
 |-------------|-------------------------------------------|
@@ -169,18 +169,18 @@ To make the review rating system interactive and accessible, a **Streamlit web a
 
 ---
 
-## 🧠 Deep Learning Overview
+## Deep Learning Overview
 
 **Deep Learning** is a subfield of machine learning that uses neural networks with multiple layers to model complex patterns, especially in unstructured data like text, images, and audio.
 
-### ✅ When Deep Learning is Useful for Text Classification:
+###  When Deep Learning is Useful for Text Classification:
 - A large dataset is available
 - Context and word order are important
 - Pretrained embeddings or models (like BERT) are used
 
 ---
 
-## 🔍 Deep Learning Models for Text Classification
+## Deep Learning Models for Text Classification
 
 Below are widely used deep learning architectures suitable for text classification:
 
